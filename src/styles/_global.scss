@@ -1,0 +1,20 @@
+$theme-color: #40a944;
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  line-height: 1.3;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
