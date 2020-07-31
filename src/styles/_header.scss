@@ -1,0 +1,105 @@
+.header {
+  .flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      font-size: 230%;
+      color: #000;
+      font-family: "Grenze Gotisch", cursive;
+      // background-color: blue;
+      span {
+        color: $theme-color;
+        font-size: 140%;
+      }
+    }
+
+    .flex {
+      display: flex;
+      align-items: center;
+      font-size: 70%;
+      padding-top: 15px;
+      width: 100%;
+      justify-content: flex-end;
+
+      .search-holder {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 45px;
+        color: #fff;
+
+        .category {
+          background-color: #dddcdc;
+          color: #000;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          padding: 0 15px;
+          border-top-left-radius: 45px;
+          border-bottom-left-radius: 45px;
+          border: solid 1px $grey-light;
+          border-right: none;
+          font-size: 90%;
+
+          ion-icon{
+            font-size: 14px;
+            margin-left: 5px;
+          }
+        }
+
+        input {
+          padding: 0 12px;
+          width: 70%;
+          height: 100%;
+          border:none;
+          border-bottom: solid 1px $grey-light;
+          border-top: solid 1px $grey-light;
+        }
+
+        .search-btn{
+          background-color: $theme-color;
+          padding: 0px 15px;
+          border-top-right-radius: 45px;
+          border-bottom-right-radius: 45px;
+          display: grid;
+          place-items: center;
+          color: #fff;
+          height: 100%;
+          border: solid 1px $grey-light;
+          border-left: none;
+
+          ion-icon{
+            font-size: 26px;
+          }
+
+        }
+
+      }
+
+      .holder {
+        position: relative;
+        .counter {
+          position: absolute;
+          background-color: red;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          color: #fff;
+          display: grid;
+          place-items: center;
+          top: -6px;
+          left: 18px;
+        }
+        margin-left: 15px;
+      }
+
+      ion-icon {
+        font-size: 200%;
+      }
+    }
+  }
+}

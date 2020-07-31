@@ -1,163 +1,37 @@
-nav {
-  transition: all 0.6s;
-  padding: 5px 0;
-}
+nav{
+  background-color: $theme-color;
+  margin-top: 1rem;
 
-.desktop-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 
-  .logo {
-    font-size: 200%;
-    color: #000;
-    font-family: "Grenze Gotisch", cursive;
-    span {
-      color: $theme-color;
-    }
-  }
-
-  .main-nav {
+  ul{
     list-style: none;
-
-    li {
-      position: relative;
-      display: inline-block;
-      margin-left: 40px;
-      border-bottom: solid 2px transparent;
-
-      a {
-        color: #000;
-        text-decoration: none;
-        font-size: 76%;
-        font-weight: 400;
-        padding-bottom: 5px;
-      }
-      &:hover::before {
-        transform: scale(1);
-      }
-      &::before {
-        position: absolute;
-        content: "";
-        width: 110%;
-        height: 0;
-        bottom: -5px;
-        left: -5%;
-        border-bottom: 2px solid $theme-color;
-        transform: scale(0);
-        transition: transform 0.3s ease-in-out;
-      }
-    }
-  }
-}
-
-.mobile-nav {
-  position: absolute;
-  width: 100%;
-  background-color: #202020;
-
-  .flex {
-    position: relative;
-    display: flex;
-    padding: 0.5rem 0;
-    align-items: center;
-    padding-left: 15px;
-  }
-
-  .logo {
-    font-size: 160%;
-    color: #fff;
+    font-size: 80%;
     font-weight: 500;
-    font-family: "Grenze Gotisch", cursive;
-    span {
-      color: $theme-color;
-    }
-  }
+    padding: 14px;
 
-  .nav-burger {
-    position: absolute;
-    right: 15px;
-    width: 30px;
-    transition: transform 0.6s;
-    z-index: 5;
-
-    .line-1 {
-      background-color: $theme-color;
-      height: 2px;
-      margin-right: 10px;
-      transition: all 0.6s;
-      margin-bottom: 3px;
-      width: 60%;
-    }
-
-    .line-2 {
-      background-color: $theme-color;
-      height: 2px;
-      transition: all 0.6s;
-      margin: 0.3rem 0;
-    }
-  }
-
-  .line-3 {
-    background-color: $theme-color;
-    height: 2px;
-    margin-left: 10px;
-    width: 60%;
-    margin-top: 3px;
-    transition: all 0.6s;
-  }
-
-  ul {
-    position: fixed;
-    overflow-y: auto;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 265px;
-    z-index: 3;
-    //   background-color: $bg-grey-light;
-
-    transform: translateX(-270px);
-    transition: transform 0.6s;
-    list-style: none;
-
-    a {
-      color: #fff;
-      text-decoration: none;
+    li{
       display: inline-block;
-      width: 100%;
-      border-top: 1px solid #3a3939;
-      border-bottom: 1px solid #292929;
-      padding: 15px 28px;
-      font-size: 80%;
+      margin-left: 20px;
     }
 
-    .logo {
-      text-align: center;
-      font-size: 150%;
-      font-family: "Grenze Gotisch", cursive;
-      padding: 60px 0;
-      border-bottom: 1px solid #323233;
-      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  a{
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    place-items: center;
+
+    ion-icon{
+      margin-left: 10px;
+      font-size: 90%;
     }
+
+    .menu-burger-icon{
+      font-size: 30px !important;
+      display: none !important;
+    }
+
   }
 
-  .left-nav-peek {
-    transform: translateX(0);
-  }
-}
-
-.main-nav-active {
-  position: fixed;
-  z-index: 2;
-  width: 100%;
-  top: -80px;
-  background-color: #202020;
-  .desktop-nav {
-    padding: 0.4rem 0;
-  }
-  .logo {
-    font-family: "Grenze Gotisch", cursive;
-    font-size: 160%;
-  }
 }
