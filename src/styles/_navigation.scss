@@ -7,11 +7,20 @@ nav{
     list-style: none;
     font-size: 80%;
     font-weight: 500;
-    padding: 14px;
+    height: 50px;
+    display: flex;
+    align-items: center;
 
     li{
       display: inline-block;
       margin-left: 20px;
+      height: 100%;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      &:first-child{
+        background-color: $theme-color-dark;
+      }
     }
 
   }
