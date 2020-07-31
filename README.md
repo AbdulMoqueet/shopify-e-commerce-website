@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f5cca6d8-1e83-4af5-9705-493f58c2a163/deploy-status)](https://app.netlify.com/sites/moqueet-shopify/deploys)
 # Live At: https://moqueet-shopify.netlify.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
